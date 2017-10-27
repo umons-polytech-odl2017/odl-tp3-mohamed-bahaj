@@ -3,6 +3,8 @@ package exercice1;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.*;
+import java.awt.event.MouseEvent;
 
 
 public class Exercice1Form {
@@ -24,6 +26,26 @@ public class Exercice1Form {
 		frame.setVisible(true);
 	}
 
-	
+
+	public Exercice1Form(){
+		btn_Rectangle.addActionListener(new ActionListener() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+
+			}
+
+			public void mouseReleased(MouseEvent e){
+
+			}
+		});
+	}
+
+
+	private void createUIComponents() {
+		JPanelDraw = new JPanel();
+	}
+
+
+
 
 }
